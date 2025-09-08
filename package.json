@@ -2,6 +2,7 @@
   "name": "eidoplot-vscode",
   "displayName": "eidoplot-vscode",
   "description": "VS Code extension for eidoplot",
+  "publisher": "rtbo",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.103.0"
@@ -21,5 +22,9 @@
       "scopeName": "source.eplt",
       "path": "./syntaxes/eplt.tmLanguage.json"
     }]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rtbo/eidoplot-vscode.git"
   }
 }
