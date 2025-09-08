@@ -1,0 +1,99 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Eidoplot DSL",
+	"scopeName": "source.eplt",
+	"repository": {},
+	"fileTypes": [
+		"eplt", "edsl"
+	],
+	"uuid": "eplt-syntax-highlight",
+	"patterns": [
+		{
+			"name": "invalid.illegal.property.double-dash.eplt",
+			"match": "\\b[a-z][a-z0-9-]*--[a-z0-9-]*\\b"
+		},
+		{
+			"name": "invalid.illegal.property.capital.eplt",
+			"match": "\\b[a-z][a-z0-9-]*[A-Z][a-z0-9-]*\\b"
+		},
+		{
+			"name": "invalid.illegal.property.underscore.eplt",
+			"match": "\\b[a-z][a-z0-9-]*_[a-z0-9-]*\\b"
+		},
+		{
+			"name": "invalid.illegal.type.underscore.eplt",
+			"match": "\\b[A-Z][a-zA-Z0-9]*_[a-zA-Z0-9]\\b"
+		},
+		{
+			"name": "comment.line.double-slash.eplt",
+			"begin": "//",
+			"end": "$",
+			"captures": {
+				"0": {
+					"name": "comment.line.double-slash.eplt"
+				}
+			}
+		},
+		{
+			"name": "string.quoted.double.eplt",
+			"begin": "\"",
+			"end": "\"",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.begin.eplt"
+				}
+			},
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.string.end.eplt"
+				}
+			},
+			"patterns": [
+				{
+					"name": "constant.character.escape.eplt",
+					"match": "\\\\[\\\"\\\\nrt]"
+				}
+			]
+		},
+		{
+			"name": "constant.numeric.integer.eplt",
+			"match": "\\b[+-]?\\d+\\b"
+		},
+		{
+			"name": "constant.numeric.float.eplt",
+			"match": "\\b[+-]?\\d+\\.\\d+([eE][+-]?\\d+)?\\b"
+		},
+		{
+			"name": "variable.other.property.eplt",
+			"match": "\\b[a-z][a-z0-9-]*\\b"
+		},
+		{
+			"name": "entity.name.type.eplt",
+			"match": "\\b[A-Z][a-zA-Z0-9]*\\b"
+		},
+		{
+			"name": "punctuation.separator.colon.eplt",
+			"match": ":"
+		},
+		{
+			"name": "punctuation.separator.comma.eplt",
+			"match": ","
+		},
+		{
+			"name": "punctuation.definition.brace.open.eplt",
+			"match": "\\{"
+		},
+		{
+			"name": "punctuation.definition.brace.close.eplt",
+			"match": "\\}"
+		},
+		{
+			"name": "punctuation.definition.bracket.open.eplt",
+			"match": "\\["
+		},
+		{
+			"name": "punctuation.definition.bracket.close.eplt",
+			"match": "\\]"
+		}
+	]
+}

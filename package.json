@@ -1,0 +1,25 @@
+{
+  "name": "eidoplot-vscode",
+  "displayName": "eidoplot-vscode",
+  "description": "VS Code extension for eidoplot",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "eplt",
+      "aliases": ["Eidoplot DSL", "eplt", "edsl"],
+      "extensions": ["eplt"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "eplt",
+      "scopeName": "source.eplt",
+      "path": "./syntaxes/eplt.tmLanguage.json"
+    }]
+  }
+}
