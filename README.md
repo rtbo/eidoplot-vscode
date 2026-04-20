@@ -1,5 +1,4 @@
 # Eidoplot VS Code Extension
 
-Eidoplot VS Code adds syntax highlighting and basic language support for the Eidoplot DSL (`.eplt`, `.edsl` files).
+**Extension is deprecated. Please use extension [`plotive-vscode`](https://marketplace.visualstudio.com/items?itemName=rtbo.plotive-vscode) instead.**
 
-![Syntax Highlighting Example](capture.png)

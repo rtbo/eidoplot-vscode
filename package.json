@@ -3,7 +3,7 @@
   "displayName": "eidoplot-vscode",
   "description": "VS Code extension for eidoplot",
   "publisher": "rtbo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.103.0"
   },
@@ -26,5 +26,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/rtbo/eidoplot-vscode.git"
-  }
+  },
+  "deprecated": true,
+  "deprecationMessage": "This extension is deprecated. Please install extension 'plotive-vscode' instead."
 }
